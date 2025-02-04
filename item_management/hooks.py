@@ -5,6 +5,12 @@ app_description = "item management system"
 app_email = "ravidsoni1454@gamail.com"
 app_license = "mit"
 
+doc_events = {
+    "Item": {
+        "before_save": "item_management.doctype.item.item.before_save_item"
+    }
+}
+
 # Apps
 # ------------------
 

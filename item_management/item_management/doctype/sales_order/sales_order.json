@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-24 14:02:35.923882",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_details_section",
+  "supplier",
+  "column_break_coyv",
+  "supplier_contact",
+  "column_break_vlek",
+  "supplier_email",
+  "section_break_okeb",
+  "order_date",
+  "column_break_nkwb",
+  "total_amount",
+  "item_child_section",
+  "purchase_order_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_details_section",
+   "fieldtype": "Section Break",
+   "label": "Supplier Details"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_coyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier.contact_number",
+   "fieldname": "supplier_contact",
+   "fieldtype": "Data",
+   "label": "Supplier Contact"
+  },
+  {
+   "fieldname": "column_break_vlek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier.email",
+   "fieldname": "supplier_email",
+   "fieldtype": "Data",
+   "label": "Supplier Email"
+  },
+  {
+   "fieldname": "section_break_okeb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "column_break_nkwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_child_section",
+   "fieldtype": "Section Break",
+   "label": "Item Child"
+  },
+  {
+   "fieldname": "purchase_order_item",
+   "fieldtype": "Table",
+   "label": "Purchase Order Item",
+   "options": "Sales Order Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-24 14:15:47.365501",
+ "modified_by": "Administrator",
+ "module": "stock item",
+ "name": "Sales Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

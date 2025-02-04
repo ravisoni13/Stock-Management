@@ -4,4 +4,4 @@ item management system
 
 #### License
 
-mit
+mit# Stock-Management

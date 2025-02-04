@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_name",
+ "creation": "2024-12-24 12:52:16.330848",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jseh",
+  "item_name",
+  "stock_quantity",
+  "default_warehouse",
+  "column_break_xdat",
+  "item_code",
+  "unit_of_measure",
+  "amended_from",
+  "column_break_niou",
+  "description",
+  "section_break_aifj",
+  "default_purchase_rate",
+  "column_break_mqfu",
+  "default_selling_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jseh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description "
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit of Measure",
+   "options": "LIter\nKg\nPieces"
+  },
+  {
+   "fieldname": "default_purchase_rate",
+   "fieldtype": "Currency",
+   "label": "Default Purchase Rate"
+  },
+  {
+   "fieldname": "default_selling_rate",
+   "fieldtype": "Currency",
+   "label": "Default Selling Rate"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "stock_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stock Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_xdat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_aifj",
+   "fieldtype": "Section Break",
+   "label": "Price Set"
+  },
+  {
+   "fieldname": "column_break_mqfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_niou",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 15:57:53.580443",
+ "modified_by": "Administrator",
+ "module": "stock item",
+ "name": "Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
