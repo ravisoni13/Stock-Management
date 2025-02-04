@@ -6,4 +6,5 @@ from frappe.model.document import Document
 
 
 class Warehouse(Document):
-	pass
+	def before_save(self):
+		pass
